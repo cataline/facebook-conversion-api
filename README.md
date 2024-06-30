@@ -24,7 +24,7 @@ facebookConversionAPI.init({
 })
 ```
 
-Read more on how to get your [access token](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started/#access-token)
+Read more on how to get your [access token](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started/#access-token).
 
 ## Setting User Data
 
