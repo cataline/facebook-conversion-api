@@ -66,7 +66,7 @@ facebookConversionAPI.sendEvent({
 })
 ```
 
-Understand how [event deduplication](<(https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events?locale=en_US)>) works using event IDs.
+Understand how [event deduplication](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events?locale=en_US) works using event IDs.
 
 ## Using Enums for Standard Events
 
