@@ -61,11 +61,11 @@ class FacebookConversionAPI {
         body: {
           data: [
             {
-              event_name: options.eventName,
+              event_name: options.name,
               event_time: Math.floor(Date.now() / 1000),
-              event_id: options.eventId,
+              event_id: options.id,
               user_data: this.getUserData(),
-              custom_data: options.customData,
+              custom_data: options.data,
               event_source_url: options.sourceUrl,
               action_source: this.actionSource,
             },

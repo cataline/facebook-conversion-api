@@ -27,10 +27,10 @@ facebookConversionAPI.setUserData({
 })
 
 facebookConversionAPI.trackEvent({
-  eventName: 'CompleteRegistration',
+  name: 'CompleteRegistration',
   sourceUrl: 'https://example.com',
-  eventId: '123456789',
-  customData: {
+  id: '123456789',
+  data: {
     currency: 'USD',
     value: 100,
   },

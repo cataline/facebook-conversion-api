@@ -32,9 +32,9 @@ export interface UserData {
 }
 
 export interface trackEventOptions {
-  eventName: keyof typeof StandardEventName | (string & {})
-  eventId?: string
-  customData?: Record<string, any>
+  name: keyof typeof StandardEventName | (string & {})
+  id?: string
+  data?: Record<string, any>
   sourceUrl?: string
 }
 

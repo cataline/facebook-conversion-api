@@ -61,10 +61,10 @@ Send events to Facebook Conversion API. This method supports all standard Facebo
 
 ```ts
 facebookConversionAPI.trackEvent({
-  eventName: 'Purchase', // Use standard event name or custom event name
-  eventId: 'unique-event-id', // Optional: for deduplication
+  name: 'Purchase', // Use standard event name or custom event name
+  id: 'unique-event-id', // Optional: for deduplication
   sourceUrl: 'https://your-site.com/thank-you',
-  customData: {
+  data: {
     currency: 'USD',
     value: 99.99,
     contents: [
