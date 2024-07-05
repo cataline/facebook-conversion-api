@@ -32,32 +32,31 @@ export interface UserData {
 }
 
 export interface trackEventOptions {
-  name: keyof typeof StandardEventName | (string & {})
+  name: StandardEventName | (string & {})
   id?: string
   data?: Record<string, any>
   sourceUrl?: string
 }
 
-enum StandardEventName {
-  AddPaymentInfo = 'AddPaymentInfo',
-  AddToCart = 'AddToCart',
-  AddToWishlist = 'AddToWishlist',
-  CompleteRegistration = 'CompleteRegistration',
-  Contact = 'Contact',
-  CustomizeProduct = 'CustomizeProduct',
-  Donate = 'Donate',
-  FindLocation = 'FindLocation',
-  InitiateCheckout = 'InitiateCheckout',
-  Lead = 'Lead',
-  PageView = 'PageView',
-  Purchase = 'Purchase',
-  Schedule = 'Schedule',
-  Search = 'Search',
-  StartTrial = 'StartTrial',
-  SubmitApplication = 'SubmitApplication',
-  Subscribe = 'Subscribe',
-  ViewContent = 'ViewContent',
-}
+export type StandardEventName =
+  | 'AddPaymentInfo'
+  | 'AddToCart'
+  | 'AddToWishlist'
+  | 'CompleteRegistration'
+  | 'Contact'
+  | 'CustomizeProduct'
+  | 'Donate'
+  | 'FindLocation'
+  | 'InitiateCheckout'
+  | 'Lead'
+  | 'PageView'
+  | 'Purchase'
+  | 'Schedule'
+  | 'Search'
+  | 'StartTrial'
+  | 'SubmitApplication'
+  | 'Subscribe'
+  | 'ViewContent'
 
 type CountryCode =
   | 'af'
