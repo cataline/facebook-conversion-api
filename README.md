@@ -34,8 +34,8 @@ The more user information you provide, the better the event attribution.
 facebookConversionAPI.setUserData({
   emails: ['email_1@example.com', 'email_2@example.com'],
   phones: ['+1234567890', '+0987654321'],
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: 'john',
+  lastName: 'doe',
   dateOfBirth: '19970216',
   gender: 'm',
   city: 'São Paulo',
@@ -64,7 +64,7 @@ facebookConversionAPI.trackEvent({
   name: 'Purchase', // Use standard event name or custom event name
   id: 'unique-event-id', // Optional: for deduplication
   sourceUrl: 'https://your-site.com/thank-you',
-  data: {
+  params: {
     currency: 'USD',
     value: 99.99,
     contents: [

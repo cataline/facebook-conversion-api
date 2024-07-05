@@ -34,7 +34,7 @@ export interface UserData {
 export interface trackEventOptions {
   name: StandardEventName | (string & {})
   id?: string
-  data?: Record<string, any>
+  params?: Record<string, any>
   sourceUrl?: string
 }
 

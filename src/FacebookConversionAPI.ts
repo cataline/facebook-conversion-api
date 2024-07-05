@@ -65,7 +65,7 @@ class FacebookConversionAPI {
               event_time: Math.floor(Date.now() / 1000),
               event_id: options.id,
               user_data: this.getUserData(),
-              custom_data: options.data,
+              custom_data: options.params,
               event_source_url: options.sourceUrl,
               action_source: this.actionSource,
             },

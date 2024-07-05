@@ -1,9 +1,8 @@
 import { facebookConversionAPI } from '@/index'
 
 facebookConversionAPI.init({
-  accessToken:
-    'EAAGeZBZCoj014BOZBmJqtexjNh4xPupEoa5EbRz9mdTBJMY1Qg37SWI1mKfNfgySLMlK4qlgHtj3G4muoVm1Ff7SEf65HQhhsgjJOuPDXAEu8If02pdztAD9tDZByRM6YmPS76RLV9h6BnRIZBkTgCTynkcJhZBN6wm8N6Y6MZBj9rUbE1owZACvbGIZAiQANzVU4PwZDZD',
-  pixelId: '438653592320316',
+  accessToken: 'TOKEN',
+  pixelId: 'PIXEL_ID',
   actionSource: 'website',
 })
 
@@ -30,7 +29,7 @@ facebookConversionAPI.trackEvent({
   name: 'CompleteRegistration',
   sourceUrl: 'https://example.com',
   id: '123456789',
-  data: {
+  params: {
     currency: 'USD',
     value: 100,
   },
