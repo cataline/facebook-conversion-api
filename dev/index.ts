@@ -26,7 +26,7 @@ facebookConversionAPI.setUserData({
   externalId: '123456789',
 })
 
-facebookConversionAPI.sendEvent({
+facebookConversionAPI.trackEvent({
   eventName: 'CompleteRegistration',
   sourceUrl: 'https://example.com',
   eventId: '123456789',

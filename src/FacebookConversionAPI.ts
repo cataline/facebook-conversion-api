@@ -1,4 +1,4 @@
-import { FacebookConversionAPIOptions, UserData, SendEventOptions } from '@/types'
+import { FacebookConversionAPIOptions, UserData, trackEventOptions } from '@/types'
 import { hashUserData } from '@/utils'
 import { ofetch } from 'ofetch'
 
@@ -54,7 +54,7 @@ class FacebookConversionAPI {
     }
   }
 
-  async sendEvent(options: SendEventOptions) {
+  async trackEvent(options: trackEventOptions) {
     try {
       const response = await ofetch(`https://graph.facebook.com/v20.0/${this.pixelId}/events`, {
         method: 'post',

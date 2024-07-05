@@ -60,7 +60,7 @@ We will hash the required data using SHA-256, but you must provide the rest acco
 Send events to Facebook Conversion API. This method supports all standard Facebook pixel events and custom events.
 
 ```ts
-facebookConversionAPI.sendEvent({
+facebookConversionAPI.trackEvent({
   eventName: 'Purchase', // Use standard event name or custom event name
   eventId: 'unique-event-id', // Optional: for deduplication
   sourceUrl: 'https://your-site.com/thank-you',

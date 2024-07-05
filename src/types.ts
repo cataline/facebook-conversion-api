@@ -31,7 +31,7 @@ export interface UserData {
   facebookLoginId: string
 }
 
-export interface SendEventOptions {
+export interface trackEventOptions {
   eventName: keyof typeof StandardEventName | (string & {})
   eventId?: string
   customData?: Record<string, any>
