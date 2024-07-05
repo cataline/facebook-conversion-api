@@ -2,7 +2,7 @@
 
 > Node.js wrapper for [Facebook's Conversion API](https://developers.facebook.com/docs/marketing-api/conversions-api/)
 
-This JS/TS library allows you to track events with Facebook's Conversion API, whether on the `client-side` or `server-side`, helping you capture more accurate data for your Facebook ad campaigns.
+This JS/TS library allows you to track events with Facebook's Conversion API, whether on the **client-side** or **server-side**, helping you capture more accurate data for your Facebook ad campaigns.
 
 ## Install
 
