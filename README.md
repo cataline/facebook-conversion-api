@@ -32,16 +32,28 @@ The more user information you provide, the better the event attribution.
 
 ```ts
 facebookConversionAPI.setUserData({
-  emails: ['email_1@example.com', 'email_2@example.com'], // or null
-  phones: ['+1234567890', '+0987654321'], // or null
+  emails: ['email_1@example.com', 'email_2@example.com'],
+  phones: ['+1234567890', '+0987654321'],
+  firstName: 'John',
+  lastName: 'Doe',
+  dateOfBirth: '19970216',
+  gender: 'm',
+  city: 'São Paulo',
+  state: 'SP',
+  zip: '01100000',
+  country: 'br',
   clientIpAddress: '192.168.1.1',
   clientUserAgent: navigator.userAgent,
-  fbc: 'fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890', // or null
-  fbp: 'fb.1.1558571054389.1098115397', // or null
+  fbc: 'fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890',
+  fbp: 'fb.1.1558571054389.1098115397',
+  facebookLoginId: '1234567890',
+  externalId: '123456789',
 })
 ```
 
 Learn how to obtain [fbp/fpc identifiers](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/fbp-and-fbc/).
+
+We will hash the required data using SHA-256, but you must provide the rest according to [Facebook’s documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters) to ensure accurate and effective event tracking.
 
 ## Sending Events
 
@@ -66,19 +78,9 @@ facebookConversionAPI.sendEvent({
 })
 ```
 
+### Event Deduplication
+
 Understand how [event deduplication](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events?locale=en_US) works using event IDs.
-
-## Using Enums for Standard Events
-
-For better autocomplete and validation of standard event names, you can use the `FacebookPixelEvent` enum:
-
-```ts
-import { FacebookPixelEvent } from '@cataline/facebook-conversion-api'
-
-facebookConversionAPI.sendEvent({
-  eventName: FacebookPixelEvent.Donate,
-})
-```
 
 ## License
 

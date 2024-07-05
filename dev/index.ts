@@ -1,4 +1,4 @@
-import { FacebookPixelEvent, facebookConversionAPI } from '@/index'
+import { facebookConversionAPI } from '@/index'
 
 facebookConversionAPI.init({
   accessToken:
@@ -14,10 +14,20 @@ facebookConversionAPI.setUserData({
   clientUserAgent: navigator.userAgent,
   fbc: 'fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890',
   fbp: 'fb.1.1558571054389.1098115397',
+  country: 'br',
+  firstName: 'John',
+  lastName: 'Doe',
+  city: 'São Paulo',
+  state: 'SP',
+  zip: '000-000',
+  dateOfBirth: '01/01/2000',
+  gender: 'm',
+  facebookLoginId: '1234567890',
+  externalId: '123456789',
 })
 
 facebookConversionAPI.sendEvent({
-  eventName: FacebookPixelEvent.Purchase,
+  eventName: 'CompleteRegistration',
   sourceUrl: 'https://example.com',
   eventId: '123456789',
   customData: {
